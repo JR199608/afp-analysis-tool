@@ -1,44 +1,49 @@
-# 甲胎蛋白数据分析工具
+# AFP分析工具
 
-这是一个用于分析甲胎蛋白（AFP）测定数据的 Python 工具。
+这是一个用于分析AFP数据的Python工具。
 
-## 环境要求
+## 使用说明
 
-- Python 3.6 或更高版本
-- pip（Python 包管理器）
+### 环境要求
+- Windows 10 或更高版本
+- Python 3.8 或更高版本
 
-## 安装步骤
+### 安装步骤
+1. 下载并安装Python（如果还没有安装）
+   - 访问 https://www.python.org/downloads/
+   - 下载Python 3.8或更高版本
+   - 安装时请勾选"Add Python to PATH"选项
 
-1. 克隆或下载此项目到本地
-2. 打开命令行，进入项目目录
-3. 安装依赖包：
-   ```bash
-   pip install -r requirements.txt
-   ```
+2. 下载本工具
+   - 点击本页面右上角的绿色"Code"按钮
+   - 选择"Download ZIP"
+   - 解压下载的文件到任意文件夹
 
-## 使用方法
+3. 安装依赖包
+   - 打开命令提示符（按Win+R，输入cmd，按回车）
+   - 进入解压后的文件夹（使用cd命令）
+   - 输入以下命令：
+     ```
+     pip install -r requirements.txt
+     ```
 
-1. 准备数据：
-   - 将您的 Excel 数据文件放在项目目录中
-   - 确保数据格式与示例文件相同
+### 使用方法
+1. 准备数据文件
+   - 将需要分析的Excel文件放在程序所在文件夹中
+   - 确保文件名正确（默认为"工作簿4.xlsx"）
 
-2. 运行分析：
-   ```bash
-   python diagnosis_analyzer.py
-   ```
+2. 运行程序
+   - 双击运行 `run.bat` 文件
+   - 程序会自动分析数据并生成结果文件
 
-3. 查看示例：
-   ```bash
-   python example_usage.py
-   ```
+3. 查看结果
+   - 程序运行完成后会在同一文件夹中生成结果文件
+   - 打开 `afp_analysis_result.xlsx` 查看分析结果
 
-## 文件说明
+### 注意事项
+- 请确保Excel文件格式正确
+- 如果遇到问题，请检查Python是否正确安装
+- 如果出现错误提示，请确保所有依赖包都已正确安装
 
-- `diagnosis_analyzer.py`: 主程序文件，包含数据分析的核心功能
-- `requirements.txt`: 项目依赖文件
-- `example_usage.py`: 使用示例文件
-
-## 注意事项
-
-- 请确保输入数据格式正确
-- 分析结果将保存在新的 Excel 文件中 
+## 技术支持
+如有问题，请联系技术支持人员。 
